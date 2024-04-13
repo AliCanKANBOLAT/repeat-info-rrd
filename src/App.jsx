@@ -1,7 +1,7 @@
 import Navbar from "./Navbar"
 
-export default function App() {
-    return(
+export default function App () {
+    return (
         <>
         <Navbar />
         </>
