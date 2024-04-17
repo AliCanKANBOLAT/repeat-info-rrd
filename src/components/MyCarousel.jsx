@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import { Carousel } from 'bootstrap'; // Bootstrap Carousel'ı etkinleştirmek için Carousel modülünü içe aktarıyoruz
 import atv53 from './images/atv53.jpg';
 import manTruckh from './images/manTruckh.jpg';
 import OHW53 from './images/OHW53.jpg';
