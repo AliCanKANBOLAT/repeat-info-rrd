@@ -1,10 +1,10 @@
-import AdblueDpfEgr from "./Adblue-DPF-EGR-Cozumleri"
-import ArizaTespit from "./Arizatespit-ve-cozumu"
+import AdblueDpfEgr from "./AdblueDPFEGRCozumleri"
+import ArizaTespit from "./Arizatespitvecozumu"
 import BurblesPopcorn from "./Burbles&Popcorn"
 import Chiptuning from "./Chiptuning"
-import DSGKart from "./DSG-Sanziman-karti-guncellemesi"
-import HizLimiti from "./Hiz-Limit-Kaldirma"
-import LambdaSistemi from "./Lambda-Sistem-Cozumleri"
+import DSGKart from "./DSGSanzimankartiguncellemesi"
+import HizLimiti from "./HizLimitKaldirma"
+import LambdaSistemi from "./LambdaSistemCozumleri"
 import Paramlama from "./Paramlama"
 
 export {
