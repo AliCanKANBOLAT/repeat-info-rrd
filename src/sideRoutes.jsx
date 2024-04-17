@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Anasayfa from "./components/Anasayfa";
 import Randevu from "./components/Randevu";
 import Iletisim from "./components/İletisim";
+import NoPage from "./components/NoPage";
 import { Alientech, Dimsport, MagicMotorsports, AutoVei, Ozet } from './components/EcuProgramlama';
 import { AdblueDpfEgr, ArizaTespit, BurblesPopcorn, Chiptuning, DSGKart, HizLimiti, LambdaSistemi, Paramlama } from './components/Hizmetlerimiz';
 
@@ -24,6 +25,7 @@ export default function SideRoute() {
             <Route path="/hizmetlerimiz/burblesPopcorn" element={<BurblesPopcorn />} />
             <Route path="/hizmetlerimiz/dsgKart" element={<DSGKart />} />            
             <Route path="/hizmetlerimiz/paramlama" element={<Paramlama />} />
+            <Route path="*" element={<NoPage />} />
         </Routes>
     );
 }
