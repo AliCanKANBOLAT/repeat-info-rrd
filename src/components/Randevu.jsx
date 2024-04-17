@@ -1,38 +1,36 @@
 import React, { useState } from 'react';
 
-export default function Randevu () {
+export default function Randevu() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   const handleSavePhoneNumber = () => {
-    // Telefon numarasının doğruluğunu kontrol et
     if (!isValidPhoneNumber(phoneNumber)) {
       setErrorMessage('Lütfen geçerli bir telefon numarası girin.');
-      // Telefon numarası sıfırlanıyor
       setPhoneNumber('');
       return;
     }
-    // Telefon numarasını kaydetme işlemleri buraya eklenebilir
-    alert('Telefon numaranız kaydedildi!');
-    // Telefon numarası sıfırlanıyor
+    setSuccessMessage('Telefon numaranız kaydedildi, EN KISA SÜREDE DÖNÜŞ yapılacaktır.!');
     setPhoneNumber('');
-    // Hata mesajı sıfırlanıyor
     setErrorMessage('');
+    setTimeout(() => {
+      setSuccessMessage('');
+    }, 4000);
   };
 
   const handleChangePhoneNumber = (event) => {
     setPhoneNumber(event.target.value);
-    // Herhangi bir değişiklikte hata mesajı sıfırlanıyor
     setErrorMessage('');
+    setSuccessMessage('');
   };
 
-  // Telefon numarasının doğruluğunu kontrol eden yardımcı fonksiyon
   const isValidPhoneNumber = (phoneNumber) => {
-    const regex = /^(05\d{9})$/; // 05 ile başlayan ve toplamda 11 karakterden oluşan bir regex
+    const regex = /^(05\d{9})$/;
     return regex.test(phoneNumber);
   };
 
-  return(
+  return (
     <div className="container-fluid bg-light" style={{ minHeight: '100vh' }}>
       <div className="row justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
         <div className="col-md-6">
@@ -69,6 +67,7 @@ export default function Randevu () {
                   {errorMessage && <div className="invalid-feedback">{errorMessage}</div>}
                 </div>
               </div>
+              {successMessage && <div className="alert alert-success" role="alert">{successMessage}</div>}
               <div className="alert alert-info" role="alert">
                 Telefon numaranızı girerseniz WhatsApp'tan anlık dönüş alamadığınız zamanlarda telefon numaranız sistemimize eklenerek en kısa zamanda geri bildirim alabilirsiniz veya doğrudan WhatsApp linkine tıklayarak canlı destek alabilirsiniz.
               </div>

@@ -1,7 +1,9 @@
-export default function Anasayfa () {
+import MyCarousel from "./MyCarousel";
+
+export default function AnaSayfa () {
     return(
         <>
-        
+        <MyCarousel />
         </>
     )
 }
