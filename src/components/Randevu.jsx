@@ -31,7 +31,7 @@ export default function Randevu() {
   };
 
   return (
-    <div className="container-fluid bg-light" style={{ minHeight: '100vh' }}>
+    <div className="container-fluid" style={{ minHeight: '100vh'}}>
       <div className="row justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
         <div className="col-md-6">
           <div className="card shadow-lg p-3 mb-5 bg-white rounded">

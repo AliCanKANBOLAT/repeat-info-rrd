@@ -3,7 +3,8 @@ import manTruckh from './images/manTruckh.jpg';
 import OHW53 from './images/OHW53.jpg';
 import raceCar53 from "./images/raceCar53.jpg";
 import mercedesTruck from "./images/mercedesTruck.jpg";
-import volvoTruck from "./images/volvoTruck.jpg";
+import volvoTruck from "./images/volvoTruck.jpg"; 
+
 
 
 export default function MyCarousel() {
@@ -19,7 +20,7 @@ export default function MyCarousel() {
 
   return (
     <div className="row">
-      <div className="col-sm-8">
+      <div className="col-sm-12">
         <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-touch="false">
           <div className="carousel-inner">
             {images.map((image, index) => (
