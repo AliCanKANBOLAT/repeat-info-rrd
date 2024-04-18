@@ -86,7 +86,7 @@ export default function Iletisim() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

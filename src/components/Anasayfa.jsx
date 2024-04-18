@@ -8,10 +8,10 @@ export default function AnaSayfa() {
       <>
         <div className="container-fluid"  style={{ backgroundColor: "#34495e" }}>
         <div className="row">
-          <div className="col-sm-8 mt-2">
+          <div className="col-sm-9 mt-2 rounded">
             <MyCarousel />
           </div>
-          <div className="col-sm-4 mt-2">
+          <div className="col-sm-2 m-2 mt-4 ms-5">
             {cardsInfo.map((item,index) => (<AnasayfaCards key={index} value={item} />))}
             <TruckBrands />
           </div>
